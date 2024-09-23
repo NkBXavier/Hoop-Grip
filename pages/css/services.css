@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eeeeea;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header{
+    padding: 0 150px; /* Ajuste l'espacement interne horizontal */
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background: rgba(157, 157, 157, 0.5); /* Fond semi-transparent pour le header */
+    backdrop-filter: blur(10px); /* Applique un flou à l'arrière-plan du header */
+}
+
+header a{
+    color: #fff;
+    margin-right: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__logo {
+    width: 60px; /* Largeur du cercle contenant le logo */
+    height: 60px; /* Hauteur du cercle contenant le logo */
+    border-radius: 50%; /* Rend le conteneur en forme de cercle */
+    overflow: hidden; /* Cache l'excédent d'image qui dépasse du cercle */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le logo dans le cercle */
+    background-color: #fff; /* Optionnel : couleur de fond du cercle */
+    margin-right: 30px; /* Espacement entre le logo et les liens de navigation */
+}
+
+.header__logo img {
+    width: 100%; /* Ajuste la largeur de l'image pour remplir le cercle */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+nav {
+    display: flex; /* Utilise flexbox pour aligner les liens horizontalement */
+    align-items: center; /* Aligne les liens verticalement au centre */
+    flex-grow: 1; /* Permet à la section de navigation de prendre de l'espace disponible */
+}
+
+.LoginButton {
+    margin-left: auto; /* Pousse le bouton à l'extrême droite du header */
+}
+
+.LoginButton button {
+    text-decoration: none;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none; /* Retire la bordure par défaut du bouton */
+    cursor: pointer; /* Change le curseur au survol pour indiquer que le bouton est cliquable */
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+
+.LoginButton button:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
