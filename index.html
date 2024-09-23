@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Hoopgrip.png" type="image/png"> <!-- Lien vers votre logo -->
+    <title>Accueil</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="image/Hoopgrip.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="pages/shop.html">shop</a>
+            <a href="pages/services.html">Services</a>
+            <a href="pages/contacts.html">Contacts</a>
+        </nav>
+        <div class="LoginButton">
+            <button onclick="window.location.href='pages/connexion/index.html'">Sign In</button>
+        </div>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/slider1.jpeg">
+                <div class="content">
+                    <div class="author">Un Impact Positif sur le Terrain</div>
+                    <div class="title">DURABILITE ET ECORESPONSABILITE</div>
+                    <div class="topic">Chaussures de Basketball Écoresponsables</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Engagez-vous pour un avenir durable avec notre collection de chaussures de basketball conçues à partir de matériaux recyclés et durables. Nous croyons que la performance ne doit pas se faire au détriment de la planète. En choisissant nos chaussures, vous contribuez à un environnement plus sain tout en profitant de produits de haute qualité qui résistent à l'usure du jeu.
+                    </div>
+                    <div class="buttons">
+                        <button>VOIR PLUS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/slider2.jpeg">
+                <div class="content">
+                    <div class="author">Confort Inégalé pour une Performance Maximale</div>
+                    <div class="title">PERFORMANCE ET CONFORT</div>
+                    <div class="topic">Dominez le Terrain</div>
+                    <div class="des">
+                        Découvrez notre collection de chaussures conçues pour les athlètes qui exigent le meilleur. Avec un amorti supérieur et un maintien parfait, ces chaussures vous permettent de rester concentré sur votre jeu. Chaque modèle est conçu pour offrir un confort optimal, réduisant la fatigue et augmentant votre endurance sur le terrain.
+                    </div>
+                    <div class="buttons">
+                        <button>VOIR PLUS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/slider3.jpeg">
+                <div class="content">
+                    <div class="author">Des Chaussures de Basketball Révolutionnaires</div>
+                    <div class="title">TECHNOLOGIE ET INNOVATION</div>
+                    <div class="topic">La Technologie au Service du Jeu</div>
+                    <div class="des">
+                        Nos chaussures intègrent les dernières innovations technologiques pour améliorer votre performance. Grâce à des matériaux légers et durables, une traction améliorée et un soutien de la cheville exceptionnel, vous aurez l'avantage dont vous avez besoin pour surpasser la concurrence. Chaque paire est une fusion de style et de fonction, alliant design moderne et efficacité.
+                    </div>
+                    <div class="buttons">
+                        <button>VOIR PLUS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/slider4.jpeg">
+                <div class="content">
+                    <div class="author">Chaussures de Basketball à Votre Image</div>
+                    <div class="title">STYLE ET PERSONNALISATION</div>
+                    <div class="topic">Exprimez Votre Style sur le Terrain</div>
+                    <div class="des">
+                        Le style compte autant que la performance. Notre gamme de chaussures vous permet de personnaliser votre look tout en assurant un soutien optimal pendant le jeu. Avec une variété de couleurs et de designs, vous pouvez afficher votre personnalité sur le terrain. Que vous préfériez un look classique ou audacieux, nous avons la paire qui vous correspond.
+                    </div>
+                    <div class="buttons">
+                        <button>VOIR PLUS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/slider1.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Nike Selects
+                    </div>
+                    <div class="description">
+                        Kobe 6 Grinch
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/slider2.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Nike Selects
+                    </div>
+                    <div class="description">
+                        Zoom Freak 4 PE
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/slider3.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Nike Selects
+                    </div>
+                    <div class="description">
+                        LeBron 20
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/slider4.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Nike Selects
+                    </div>
+                    <div class="description">
+                        Witness VIII
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!-- -->
+
+    <div class="titre">
+        <h2><span>THE NI</span>KE KOBE 6 <span>MAMBA</span></h2>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>Winter</h4>
+                        <p>Winter has so much to offer -
+                         creative activities</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Digital Technology</h4>
+                        <p>Gets better every day -
+                         stay tuned</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Globalization</h4>
+                        <p>Help people all over the world</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c4" >
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="description">
+                        <h4>New technologies</h4>
+                        <p>Space engineering becomes
+                         more and more advanced</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c5" >
+            <label for="c5" class="card">
+                <div class="row">
+                    <div class="icon">5</div>
+                    <div class="description">
+                        <h4>New technologies</h4>
+                        <p>Space engineering becomes
+                         more and more advanced</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c6" >
+            <label for="c6" class="card">
+                <div class="row">
+                    <div class="icon">6</div>
+                    <div class="description">
+                        <h4>New technologies</h4>
+                        <p>Space engineering becomes
+                         more and more advanced</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c7" >
+            <label for="c7" class="card">
+                <div class="row">
+                    <div class="icon">7</div>
+                    <div class="description">
+                        <h4>New technologies</h4>
+                        <p>Space engineering becomes
+                         more and more advanced</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c8" >
+            <label for="c8" class="card">
+                <div class="row">
+                    <div class="icon">8</div>
+                    <div class="description">
+                        <h4>New technologies</h4>
+                        <p>Space engineering becomes
+                         more and more advanced</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <h1 class="modeles">Nos modèles iconiques</h1>
+
+    <section class="containerCard">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo1.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Aunt Pearl</h3>
+                            <p class="card__description">
+                                Nike KD 15 NRG EP
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo2.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Aunt Pearl</h3>
+                            <p class="card__description">
+                                Nike KD 15
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo3.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Aunt Pearl</h3>
+                            <p class="card__description">
+                                Nike KD 15
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo4.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Emerald Green</h3>
+                            <p class="card__description">
+                                Nike KD 7
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerCard">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo5.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">VII White</h3>
+                            <p class="card__description">
+                                Lebron Witness
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo6.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Valentine's Day</h3>
+                            <p class="card__description">
+                                Nike Lebron 19
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo7.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Bred Red</h3>
+                            <p class="card__description">
+                                Nike Lebron Witness 7
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo8.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Stocking Stuffer</h3>
+                            <p class="card__description">
+                                Nike Lebron 20
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerCard">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo9.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Wratherman</h3>
+                            <p class="card__description">
+                                Nike Kyrie 7
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo10.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Concepts-Golden Mummy</h3>
+                            <p class="card__description">
+                                Nike Kyrie 6
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo11.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Confetti</h3>
+                            <p class="card__description">
+                                Nike Kyrie 4
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo12.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Hunger</h3>
+                            <p class="card__description">
+                                Nike Ja 1
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerCard">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo13.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Giannis Vrombit</h3>
+                            <p class="card__description">
+                                Freak 5
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo14.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Under Armour</h3>
+                            <p class="card__description">
+                                Curry Splash 24
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo15.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Kidsuper MB.03</h3>
+                            <p class="card__description">
+                                Puma Lamelo Ball
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="image/expo16.jpeg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+                            <div class="card__data">
+                            <h3 class="card__name">Puma MB1</h3>
+                            <p class="card__description">
+                                Lamelo Ball Queen City
+                            </p>
+                            <a href="#" class="card__button">20.000 XAF</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Logo et Description -->
+            <div class="footer__about">
+                <h2 class="footer__logo">BasketShop HoopGrip</h2>
+                <p class="footer__description">
+                    Votre destination ultime pour les chaussures de basketball les plus récentes et les plus stylées. 
+                    Performance et confort garantis.
+                </p>
+            </div>
+    
+            <!-- Navigation -->
+            <div class="footer__links">
+                <h3 class="footer__title">Liens rapides</h3>
+                <ul class="footer__list">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/contacts.html">Contacts</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer__contact">
+                <h3 class="footer__title">Contactez-nous</h3>
+                <ul class="footer__list">
+                    <li><a href="mailto:support@basketshop.com">support@HoopGrip.com</a></li>
+                    <li><a href="tel:+1234567890">+237 6-56-53-39-60</a></li>
+                    <li><a href="#">Deido Bonabassem, Ville de Douala, Cameroun</a></li>
+                </ul>
+            </div>
+    
+            <!-- Réseaux Sociaux -->
+            <div class="footer__social">
+                <h3 class="footer__title">Suivez-nous</h3>
+                <div class="footer__social-icons">
+                    <a href="#"><img src="image/facebook.png" ></a>
+                    <a href="#"><img src="image/twitter.png" ></a>
+                    <a href="#"><img src="image/social.png" ></a>
+                    <a href="#"><img src="image/youtube.png" ></a>
+                </div>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="footer__newsletter">
+                <h3 class="footer__title">Inscrivez-vous à notre Newsletter HoopGrip</h3>
+                <form action="#" class="footer__form">
+                    <input type="email" placeholder="Votre email" class="footer__input" required>
+                    <button type="submit" class="footer__button">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer__bottom">
+            <p>&copy; 2024 BasketShop HoopGrip. Tous droits réservés.</p>
+        </div>
+    </footer> 
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
